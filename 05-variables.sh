@@ -10,5 +10,5 @@ echo "Enter your password: "
 
 read -s PASSWORD # the value which user enters will not be visible in the terminal but its value will be assigned to the variable
 
-echo "PAssword: ${PASSWORD}
+echo "Password: ${PASSWORD}"
 
