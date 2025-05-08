@@ -13,19 +13,19 @@ N="\e[0m" #Normal colour
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "ERROR: $2 has $R FAILED $N"
+        echo -e "ERROR: $2 has $R FAILED $N"
         exit 1
     else
-        echo "$2 $G SUCCESS $N!"
+        echo -e "$2 $G SUCCESS $N!"
     fi
 }
 
 if [ ${ID} != 0 ]
 then 
-    echo "$R ERROR: Please run with root access $N"
+    echo -e "$R ERROR: Please run with root access $N"
     exit 1
 else
-    echo "$G Root user $N"
+    echo -e "$G Root user $N"
 fi
 
 yum install mysql -y &>> $LOGFILE
