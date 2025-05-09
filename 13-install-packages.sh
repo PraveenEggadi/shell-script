@@ -14,4 +14,4 @@ else
     echo -e "$G Root User $N"
 fi
 
-echo 
+echo "All Arguments passed: $@"
