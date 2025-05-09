@@ -13,10 +13,10 @@ echo "script started executing at $TIMESTAMP" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "ERROR: $2 has $R FAILED"
+        echo " $2 .... $R FAILED"
         exit 1
     else
-        echo "$2 $G SUCCESS!"
+        echo "$2 .... $G SUCCESS!"
     fi
 }
 
@@ -39,4 +39,5 @@ do
         VALIDATE $? "Installation of $package"
     else
         echo -e "$package is already installed... $Y SKIPPED $N"
+    fi
 done
