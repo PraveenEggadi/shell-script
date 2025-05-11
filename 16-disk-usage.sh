@@ -12,4 +12,5 @@ do
     if [ $usage -ge $partition ]
     then
         message+="High Disk usage alert on $partition:  $usage"
+    fi
 done <<< $DISK_USAGE
