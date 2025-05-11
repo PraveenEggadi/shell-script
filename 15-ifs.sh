@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# IFS = internal field separator
+
 file=/etc/passwd
 
 R="\e[31m"
