@@ -12,7 +12,7 @@ then
     echo -e "$R file: $file does not exist $N"
 fi
 
-while IFS= ":" read -r f1 username password userid groupid fullname home_dir shell_path
+while IFS=":" read -r f1 username password userid groupid fullname home_dir shell_path
 do
     echo "username: $username"
     echo "id: $userid"
