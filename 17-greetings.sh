@@ -28,4 +28,4 @@ then
     exit 1
 fi
 
-echo "Hello $Name. $Wishes. I am learning shell script."
+echo "Hello $NAME. $WISHES. I am learning shell script."
