@@ -24,6 +24,7 @@ done
 # if [ -z "$NAME" ] || [ -z "$WISHES" ]; this condition checks for both fields as they are mandatory
 if [ -z "$NAME" ]  # now name is mandatory and wishes are optional
 then
+    # echo "ERROR: Both -n and -w are mandatory options."
     echo "ERROR: -n is mandatory."
     USAGE
     exit 1
